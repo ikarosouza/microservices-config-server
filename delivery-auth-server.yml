@@ -37,6 +37,9 @@ spring:
         generate-ddl: false
         hibernate:
             ddl-auto: none
+            jdbc:
+              lob:
+                non_contextual_creation: true
         show-sql: true
     main:
       web-application-type: none
